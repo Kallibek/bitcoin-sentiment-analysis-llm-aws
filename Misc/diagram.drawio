@@ -1,0 +1,146 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11" pages="2">
+  <diagram name="Diagram" id="S0EqPQkRr32vJrhZlNwu">
+    <mxGraphModel dx="1270" dy="1157" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eur-24LX7KFhaMvavt1v-21" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="120" y="270" width="800" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=orthogonalEdgeStyle;fillOpacity=70;" parent="1" source="eur-24LX7KFhaMvavt1v-23" target="eur-24LX7KFhaMvavt1v-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="219" y="356" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="260" y="356" />
+              <mxPoint x="260" y="356" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;fillOpacity=70;" parent="1" source="sJ9Il_0hgiisMey0WvD_-21" target="eur-24LX7KFhaMvavt1v-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="184.5" y="320" as="targetPoint" />
+            <mxPoint x="184.50499999999988" y="215" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillOpacity=70;" parent="1" source="eur-24LX7KFhaMvavt1v-4" target="eur-24LX7KFhaMvavt1v-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="356" />
+              <mxPoint x="370" y="356" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillOpacity=70;" edge="1" parent="1" source="eur-24LX7KFhaMvavt1v-4" target="sJ9Il_0hgiisMey0WvD_-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-4" value="&lt;span style=&quot;font-weight: normal; font-size: 12px;&quot;&gt;Amazon Kinesis Data Streams&lt;br&gt;for raw tweets&lt;/span&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.kinesis_data_streams;" parent="1" vertex="1">
+          <mxGeometry x="270" y="310" width="80" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillOpacity=70;" parent="1" source="eur-24LX7KFhaMvavt1v-8" target="eur-24LX7KFhaMvavt1v-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="356" />
+              <mxPoint x="550" y="356" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-8" value="Glue Python worker&lt;br&gt;to get tweet sentiment &lt;br&gt;using GPT API" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.glue;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="410" y="306.5" width="82.5" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;fillOpacity=70;" parent="1" source="sJ9Il_0hgiisMey0WvD_-21" target="eur-24LX7KFhaMvavt1v-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="451.28571428571445" y="230" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillOpacity=70;" edge="1" parent="1" source="eur-24LX7KFhaMvavt1v-12" target="sJ9Il_0hgiisMey0WvD_-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillOpacity=70;" edge="1" parent="1" source="eur-24LX7KFhaMvavt1v-12" target="eur-24LX7KFhaMvavt1v-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="360" />
+              <mxPoint x="680" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-12" value="&lt;font style=&quot;font-size: 12px; font-weight: normal;&quot;&gt;Amazon Kinesis Data Streams&lt;br&gt;for sentiment of tweets&lt;/font&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.kinesis_data_streams;" parent="1" vertex="1">
+          <mxGeometry x="570" y="310" width="80" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillOpacity=70;" parent="1" source="eur-24LX7KFhaMvavt1v-14" target="eur-24LX7KFhaMvavt1v-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-14" value="&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Glue Spark Structured Streaming&lt;br&gt;to aggrege tweet sentiment by minute&lt;/span&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.glue;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="768" y="310" width="82.5" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-17" value="S3 bucket to store &lt;br&gt;agg sentiment by hour" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="771" y="650" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-22" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Provisioned by Terraform&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=default;strokeColor=default;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="970" width="650" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eur-24LX7KFhaMvavt1v-23" value="Glue Python worker&lt;br&gt;to generate fake tweets&lt;br&gt;using OpenAI API" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.glue;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="143.25" y="306.5" width="82.5" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillOpacity=70;" edge="1" parent="1" source="sJ9Il_0hgiisMey0WvD_-1" target="sJ9Il_0hgiisMey0WvD_-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-1" value="&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Kinesis Firehose&lt;/span&gt;" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.kinesis_data_firehose;" vertex="1" parent="1">
+          <mxGeometry x="271" y="511" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;entryX=0;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillOpacity=70;" edge="1" parent="1" source="sJ9Il_0hgiisMey0WvD_-2" target="sJ9Il_0hgiisMey0WvD_-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-2" value="S3 bucket to store &lt;br&gt;raw tweets" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="272.5" y="650" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-3" value="&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;S3 bucket to store tweet sentiments&lt;/span&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570.75" y="650" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillOpacity=70;" edge="1" parent="1" source="sJ9Il_0hgiisMey0WvD_-5" target="sJ9Il_0hgiisMey0WvD_-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-5" value="&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Kinesis Firehose&lt;/span&gt;" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.kinesis_data_firehose;" vertex="1" parent="1">
+          <mxGeometry x="570.75" y="520" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-11" value="QuickSight to visualize &lt;br&gt;aggregated tweet sentiments" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.quicksight;fillColor=#00B7F4;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="980" y="869" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillOpacity=70;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="980.0000000000002" as="sourcePoint" />
+            <mxPoint x="500" y="980.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;fillOpacity=70;" edge="1" parent="1" source="sJ9Il_0hgiisMey0WvD_-16" target="sJ9Il_0hgiisMey0WvD_-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-16" value="Glue Database and Tables" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue;" vertex="1" parent="1">
+          <mxGeometry x="572" y="860" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillOpacity=70;" edge="1" parent="1" source="sJ9Il_0hgiisMey0WvD_-3" target="sJ9Il_0hgiisMey0WvD_-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="359" y="733" as="sourcePoint" />
+            <mxPoint x="570" y="882" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;entryX=1;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillOpacity=70;" edge="1" parent="1" source="eur-24LX7KFhaMvavt1v-17" target="sJ9Il_0hgiisMey0WvD_-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="617" y="753" as="sourcePoint" />
+            <mxPoint x="611" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJ9Il_0hgiisMey0WvD_-21" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/512px-OpenAI_Logo.svg.png;imageBorder=none;labelPadding=0;" vertex="1" parent="1">
+          <mxGeometry x="255.5" y="210" width="110.51" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="jEov1iLJT3sm9b8_ijX3" name="Description">
+    <mxGraphModel dx="2266" dy="810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
