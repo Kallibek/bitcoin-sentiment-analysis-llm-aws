@@ -72,22 +72,22 @@ A Kinesis Firehose delivery stream is configured to continuously ingest both raw
 ## File Structure
 
 - **Glue Scripts (`glue_scripts/`):**
-  - `tweet_generator.py`  
+  - [tweet_generator.py](glue_scripts/tweet_generator.py)
     Generates Bitcoin-related tweets using OpenAI's chat API and streams them to an AWS Kinesis stream.
   
-  - `sentiment_analysis.py`  
+  - [sentiment_analysis.py](glue_scripts/sentiment_analysis.py)
     Consumes tweets from Kinesis, analyzes sentiment via OpenAI's API (using a numeric scoring prompt), and streams the results to a sentiments stream.
 
-  - `streaming_aggregation.py`  
+  - [streaming_aggregation.py](glue_scripts/streaming_aggregation.py)
     A PySpark (AWS Glue) job that aggregates sentiment scores over a specified time window and writes the results to S3 in JSON format.
 
 - **Terraform Files:**  
   *(Note: The following Terraform files are part of the infrastructure as code for setting up AWS resources, though their content is not displayed here.)*
-  - `buckets.tf`
-  - `glue_jobs.tf`
-  - `glue_tables.tf`
-  - `kinesis_and_secrets.tf`
-  - `variables.tf`
+  - [buckets.tf](terraform/buckets.tf)
+  - [glue_jobs.tf](terraform/glue_jobs.tf)
+  - [glue_tables.tf](terraform/glue_tables.tf)
+  - [kinesis_and_secrets.tf](terraform/kinesis_and_secrets.tf)
+  - [variables.tf](terraform/variables.tf)
 
 ---
 
