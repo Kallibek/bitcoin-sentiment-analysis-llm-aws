@@ -23,15 +23,15 @@ The Bitcoin Social Sentiment Analyzer is a data pipeline that generates, analyze
 This project processes Bitcoin-related tweets through the following steps:
 1. **Tweet Generation:**  
    Tweets are generated using OpenAI's GPT models (e.g., GPT-3.5-turbo) to simulate diverse and engaging Bitcoin-related content.  
-   - See [tweet_generator.py](glue_scripts\tweet_generator.py) for the production version.
+   - See [tweet_generator.py](glue_scripts/tweet_generator.py) for the production version.
 
 2. **Sentiment Analysis:**  
    The generated tweets are ingested via AWS Kinesis. Each tweet is then processed using OpenAI's models (via a prompt that instructs the model to output a numeric sentiment score between -10.0 and 10.0) to determine its sentiment.  
-   - See [sentiment_analysis.py](glue_scripts\sentiment_analysis.py) for the production pipeline.
+   - See [sentiment_analysis.py](glue_scripts/sentiment_analysis.py) for the production pipeline.
 
 3. **Streaming Aggregation:**  
    Processed tweets with sentiment scores are aggregated over configurable time windows using Apache Spark (via AWS Glue). The aggregation computes the average sentiment over the window and writes results to an S3 bucket for downstream analysis.  
-   - Refer to [streaming_aggregation.py](glue_scripts\streaming_aggregation.py) for the aggregation job.
+   - Refer to [streaming_aggregation.py](glue_scripts/streaming_aggregation.py) for the aggregation job.
 
 4. **Visualization & Querying:**  
    - **AWS Quicksight** is used to visualize the aggregated sentiment data.  
@@ -64,7 +64,7 @@ A Kinesis Firehose delivery stream is configured to continuously ingest both raw
   AWS Quicksight visualizes aggregated sentiment trends, while AWS Athena allows users to query both raw tweet data and sentiment data.
 
 A simplified architecture diagram might look like:
-![Architecture diagram](Misc\diagram.png)
+![Architecture diagram](Misc/diagram.png)
 
 
 ## File Structure
@@ -169,7 +169,7 @@ SELECT
 FROM "tweets_database"."raw_tweets" 
 limit 10;
 ```
-![Raw Tweets from Athena](Misc\raw_tweets.png)
+![Raw Tweets from Athena](Misc/raw_tweets.png)
 
 
 
@@ -184,12 +184,12 @@ limit 10;
 
 The `sentiment` column is generated from the response provided by OpenAI's LLM.
 
-![Tweets with Sentiments from Athena](Misc\tweets_with_sentiments.png)
+![Tweets with Sentiments from Athena](Misc/tweets_with_sentiments.png)
 
 
 **Aggregated Sentiment Dashboard (AWS Quicksight)**
 
-![Bitcoin Social Sentiment over time](Misc\Bitcoin_Social_Sentiment_over_time.png)
+![Bitcoin Social Sentiment over time](Misc/Bitcoin_Social_Sentiment_over_time.png)
 
 
 ## Infrastructure as Code
