@@ -63,8 +63,10 @@ A Kinesis Firehose delivery stream is configured to continuously ingest both raw
 
   AWS Quicksight visualizes aggregated sentiment trends, while AWS Athena allows users to query both raw tweet data and sentiment data.
 
-A simplified architecture diagram might look like:
-![Architecture diagram](Misc/diagram.png)
+
+**A simplified architecture diagram might look like**:
+
+<img src="Misc/diagram.png" alt="Architecture diagram" style="border: 2px solid #000;">
 
 
 ## File Structure
@@ -169,7 +171,8 @@ SELECT
 FROM "tweets_database"."raw_tweets" 
 limit 10;
 ```
-![Raw Tweets from Athena](Misc/raw_tweets.png)
+
+<img src="Misc/raw_tweets.png" alt="Raw Tweets from Athena" style="border: 2px solid #000;">
 
 
 
@@ -184,12 +187,12 @@ limit 10;
 
 The `sentiment` column is generated from the response provided by OpenAI's LLM.
 
-![Tweets with Sentiments from Athena](Misc/tweets_with_sentiments.png)
+<img src="Misc/tweets_with_sentiments.png" alt="Tweets with Sentiments from Athena" style="border: 2px solid #000;">
 
 
 **Aggregated Sentiment Dashboard (AWS Quicksight)**
 
-![Bitcoin Social Sentiment over time](Misc/Bitcoin_Social_Sentiment_over_time.png)
+<img src="Misc/Bitcoin_Social_Sentiment_over_time.png" alt="Bitcoin Social Sentiment over time" style="border: 2px solid #000;">
 
 
 ## Infrastructure as Code
